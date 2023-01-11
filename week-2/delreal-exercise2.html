@@ -9,14 +9,13 @@
         <div id="container">
             <h1>Exercise 2.2 - Hello JavaScript</h1>
             <button id="btnMyCourse" onclick="myFunction()">What course am I taking</button>
-            <p>
-                <script>
+            <script>
                 function myFunction() {alert("WEB 231 – Enterprise JavaScript I")} 
             </script>
-            </p>
-            <p> 
-                You are now in Del Real's world!
-            </p>
+            <p id="txtMyWorld"></p>
+            <script>
+                document.getElementById("txtMyWorld").innerHTML = "You are now in Del Real's world!";
+           </script>
             <p>
             <a href="index.html" class="return-home">Return</a> 
             </p>
