@@ -1,3 +1,9 @@
+<!--
+    Title: delreal-exercise2.html
+    Author: Hannah Del Real
+    Date: 1/12/2023
+    Description: Learn to insert javascript into Html
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,17 +14,23 @@
     <body>
         <div id="container">
             <h1>Exercise 2.2 - Hello JavaScript</h1>
-            <button id="btnMyCourse" onclick="myFunction()">What course am I taking</button>
-            <script>
-                function myFunction() {alert("WEB 231 – Enterprise JavaScript I")} 
-            </script>
+
+            <!--Button will have an alert pop-up on click with addition of JavaScript-->
+            <button id="btnMyCourse">What course am I taking</button>
+            
+            <!--paragraph tag is to be filled by JavaScript-->
             <p id="txtMyWorld"></p>
+
+            <p>
+                <a href="https://hannahd06.github.io/web-231/index.html" class="return-home">Return</a> 
+            </p>
+
             <script>
+            // JavaScript for pop-up alert for btnmyCourse
+                document.getElementById("btnMyCourse").onclick = function() {alert("WEB 231 – Enterprise JavaScript I")} 
+            // value for paragraph tag
                 document.getElementById("txtMyWorld").innerHTML = "You are now in Del Real's world!";
            </script>
-            <p>
-            <a href="index.html" class="return-home">Return</a> 
-            </p>
         </div>
     </body>
 </html>
