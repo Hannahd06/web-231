@@ -16,5 +16,5 @@ let txtAddressWolfgang = "600 main street";
 document.getElementById("txtAddressLudwig").innerHTML = txtAddressLudwig;
 document.getElementById("txtAddressJohann").innerHTML = txtAddressJohann;
 document.getElementById("txtAddressWolfgang").innerHTML = txtAddressWolfgang;
- 
+
   
