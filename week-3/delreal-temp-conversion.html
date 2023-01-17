@@ -1,0 +1,65 @@
+<!--
+    Title: delreal-temp-conversion.html
+    Author: Hannah Del Real
+    Date: 1/17/2023
+    Description: Using Javascript click events and reading values for a temperature conversion application
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>WEB 231 – Enterprise JavaScript I</title>
+        <link href="https://hannahd06.github.io/web-231/global.css" type="text/css" rel="stylesheet">
+        <link href="delreal-temp-conversion.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <div id="container">
+                <h1 id="temp-conversion-header" class="app-header">
+                    Welcome to the Temperature Conversion App!
+                </h1>
+                <div id="form-temp-converter">
+                    <div class="card">
+                        <div class="card-title">Fahrenheit to Celsius Converter</div>
+                        <div class="card-content">
+                            <div class="form">
+                                <!--Below is the html code for the input field and button for the temperature value in Fahrenheit. -->
+                                <div class="form-field">
+                                    <label for="txtFahrenheit">Fahrenheit value</label>
+                                    <input type="text"  id="txtFahrenheit" name="txtFahrenheit" class="input" value= "80">
+                                </div>
+
+                                <!--Below is the html code for where the results of the temperature conversion using JavaScript will be displayed in. -->
+                                <div class="form-field">
+                                    <button class="btn btn-primary full-width" id="btnConvertTemp" type="submit">Convert Temperature</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="form-results-temp-converter">
+                    <div class="card">
+                        <div class="card-title"> Conversion Results</div>
+                        <div class="card-content" id="temp-results">
+                        </div>
+                    </div>
+                     <!--Below is the Return link to index.html landing page for my Web-231 Repository-->
+                    <p>
+                        <a href="https://hannahd06.github.io/web-231/index.html" class="return-home">Return</a> 
+                    </p>
+                </div>
+            </div>
+           
+            <script>
+                document.getElementById("btnConvertTemp").onclick= function () {
+                let Fahrenheit = document.getElementById("txtFahrenheit").value;
+                
+                // This is the JavaScript for the arithmetic for converting a value in Fahrenheit to Celsius.
+                let Celsius = ((parseFloat(Fahrenheit) - 32)/1.8).toFixed(2);
+                document.getElementById("temp-results").innerHTML = Celsius;
+                }
+            </script>
+        </body>
+</html>
