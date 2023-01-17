@@ -1,3 +1,12 @@
+/*
+============================================
+; Title:  names.js
+; Author: Hannah Del Real
+; Date:   12 January 2023
+; Description: assign first and last name to variables for three employees
+;===========================================
+*/
+
 const txtFirstNameLudwig = "Ludwig";
 const txtLastNameBeethoven = "Beethoven";
 const txtFirstNameJohann = "Johann";
