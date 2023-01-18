@@ -1,4 +1,4 @@
-*
+/*
 ============================================
 ; Title:  payrate.js
 ; Author: Hannah Del Real
