@@ -1,0 +1,55 @@
+<!--
+    Title: delreal-number-game.html
+    Author: Hannah Del Real
+    Date: 1/25/2023
+    Description: Using Javascript click events and reading values for a temperature conversion application
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>WEB 231 – Enterprise JavaScript I</title>
+        <link href="https://hannahd06.github.io/web-231/global.css" type="text/css" rel="stylesheet">
+        <link href="delreal-number-game.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <div id="container">
+                <h1 id="number-game-header" class="app-header">
+                    Welcome to the numbers game!
+                </h1>
+                <div id="form-nmbr-gnrtr">
+                    <div class="card">
+                        <div class="card-title">Pick a number between 1 and 10</div>
+                        <div class="card-content">
+                            <div class="form">
+                                <!--Below is the html code for the input field and button for the user to input guess for a number between 1 and 10. -->
+                                <div class="form-field">
+                                    <label for="txtMyNumber">Guess the number</label>
+                                    <input type="text"  id="txtMyNumber" name="txtMyNumber" class="input">
+                                </div>
+                                <div class="form-field">
+                                    <button class="btn btn-primary full-width" id="btnSubmit" type="submit">Submit</button>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <!--Below is the html will display the input from JavaScript to show  if user's guess is correct -->
+                <div id="form-results-nmbr-gnrtr">
+                    <div class="card">
+                        <div class="card-title">Results</div>
+                        <div class="card-content" id="number-results">
+                        </div>
+                    </div>
+                     <!--Below is the Return link to index.html landing page for my Web-231 Repository-->
+                    <p>
+                        <a href="https://hannahd06.github.io/web-231/index.html" class="return-home">Return</a> 
+                    </p>
+                </div>
+            </div>
+           
+            <script src="number-generator.js">
+            </script>
+        </body>
+</html>
