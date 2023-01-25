@@ -1,12 +1,3 @@
-/*
-============================================
-; Title:  temp-conversion.js
-; Author: Hannah Del Real
-; Date:   17 January 2023
-; Description: JavaScript for temperature conversion for delreal-temp-conversion.html using onclick events and reading values from html input fields.
-;===========================================
-*/
-//This is the onclick event for the temperature conversion html.
 document.getElementById("btnConvertTemp").onclick= function () {
     let Fahrenheit = document.getElementById("txtFahrenheit").value;
     
