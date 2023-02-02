@@ -1,0 +1,41 @@
+/**
+    Title: delreal-sequence-game.css
+    Author: Hannah Del Real
+    Date: 1/31/2023
+    Description: CSS styling for delreal-number-game.html
+*/
+/** This is the recommended css styling for html forms with results. */
+#container {
+    padding: 10px;
+}
+
+#form-Sequence-select {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+#form-results-Sequence-select {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+/** This is the end of recommended css styling for html forms with results. */
+
+body {
+    margin: 0;
+    font-family: "Oswald", Verdana, Arial, sans-serif;
+}
+
+.app-header {
+    text-align: center;
+    font-weight: 400;
+}
+
+#sequence-results {
+    text-align: center;
+    font-size: 28px;
+}
+
+p {
+   text-align-last: left;
+}
