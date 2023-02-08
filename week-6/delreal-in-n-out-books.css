@@ -1,0 +1,74 @@
+/**
+    Title: delreal-in-n-out-books.css
+    Author: Hannah Del Real
+    Date: 2/6/2023
+    Description: CSS styling for delreal-in-n-out-books.html
+*/
+/** This is the recommended css styling for html forms with results. */
+#container {
+    padding: 10px;
+}
+
+#form-favorite-select {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+#form-results-favorite-select {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+/** This is the end of recommended css styling for html forms with results. */
+
+body {
+    margin: 0;
+    font-family: "Oswald", Verdana, Arial, sans-serif;
+}
+
+.app-header {
+    text-align: center;
+    font-weight: 400;
+}
+
+/** styling for html tables. */
+p {
+   text-align-last: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4f3674;
+    color: white;
+}
+td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #d6a800;
+    color: #4f3674;
+    cursor: pointer;
+}
+
+#favorite-books {
+    display: none;
+}
+
+#favorite-authors {
+    display: none;
+}
+
+.btn-primary {
+    border: 1px solid black;
+    border-radius: 5px;  
+}

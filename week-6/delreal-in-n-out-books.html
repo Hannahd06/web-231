@@ -1,0 +1,110 @@
+<!--
+    Title: delreal-in-n-out-books.html
+    Author: Hannah Del Real
+    Date: 2/6/2023
+    Description: Using Javascript click events to display JavaScript objects bound to HTML tables
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>WEB 231 – Enterprise JavaScript I</title>
+        <link href="https://hannahd06.github.io/web-231/global.css" type="text/css" rel="stylesheet">
+        <link href="delreal-in-n-out-books.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <div id="container">
+                <h1 id="bookstore-header" class="app-header">
+                    Welcome to In-N-Out-Books
+                </h1>
+                <div id="form-favorite-select">
+                    <div class="card">
+                        <div class="card-title">My Favorites</div>
+                        <div class="card-content">
+                            <div class="form">
+                                <!--Below is the html code for the dropdown menu and button for user to select information on favorite author or books -->
+                                <div class="form-field">
+                                    <label for="favoriteList">Choose a listing:</label>
+                                    <select id="favoriteList" name="favoriteList" class="drop-down-menu">
+                                        <option value="select">--Select--</option>
+                                        <option value="books">Top 3 Favorite Books</option>
+                                        <option value="authors">Top 3 favorite Authors</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <button class="btn btn-primary full-width" id="btnDisplayListing" type="submit">Display Listing</button>
+                                </div>
+                            </div> 
+                        </div>
+                         <!--Below is the Return link to index.html landing page for my Web-231 Repository-->
+                    </div>
+                    <p>
+                        <a href="https://hannahd06.github.io/web-231/index.html" class="return-home">Return</a> 
+                    </p>
+                </div>
+
+                <!--Below is  html table that will display if the user selects Top 3 favorite authors. -->
+                <div id="form-results-favorite-select">
+                    <div id="favorite-books">
+                        <div class="card">
+                             <div class="card-title">Top 3 favorite Books</div>
+                            <div class="card-content">
+                                <table>
+                                    <tr>
+                                        <th>ISBN</th>
+                                        <th>Title</th>
+                                        <th>Pages</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtHarryPotterISBN"></td>
+                                        <td id="txtHarryPottertitle"></td>
+                                        <td id="txtHarryPotterpages"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtPridePrejudiceISBN"></td>
+                                        <td id="txtPridePrejudicetitle"></td>
+                                        <td id="txtPridePrejudicepages"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtGreatGatsbyISBN"></td>
+                                        <td id="txtGreatGatsbytitle"></td>
+                                        <td id="txtGreatGatsbypages"></td>
+                                    </tr>  
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Below is  html table that will display if the user selects Top 3 favorite authors. -->
+                    <div id="favorite-authors">
+                        <div class="card">
+                             <div class="card-title">Top 3 favorite Authors</div>
+                            <div class="card-content">
+                                <table>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Genre</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtRowlingName"></td>
+                                        <td id="txtRowlingGenre"></td>                                    </tr>
+                                    <tr>
+                                        <td id="txtAustenName"></td>
+                                        <td id="txtAustenGenre"></td>
+                                   </tr>
+                                    <tr>
+                                        <td id="txtFitzgeraldName"></td>
+                                        <td id="txtFitzgeraldGenre"></td>
+                                   </tr>  
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <script src="object-literals.js">
+            </script>
+        </body>
+</html>
