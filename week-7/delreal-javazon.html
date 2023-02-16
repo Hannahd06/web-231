@@ -1,0 +1,190 @@
+<!--
+    Title: delreal-javazon.html
+    Author: Hannah Del Real
+    Date: 2/15/2023
+    Description: Using Javascript click events to display JavaScript class-based objects bound to HTML tables 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>WEB 231 – Enterprise JavaScript I</title>
+        <link href="https://hannahd06.github.io/web-231/global.css" type="text/css" rel="stylesheet">
+        <link href="delreal-javazon.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <div id="container">
+                <h1 id="bookstore-header" class="app-header">
+                    Welcome to the Javazon App!
+                </h1>
+                <div id="form-javazon-select">
+                    <div class="card">
+                        <div class="card-title">Javazon Selection Form</div>
+                        <div class="card-content">
+                            <div class="form">
+                                <!--Below is the html code for the dropdown menu and button for user to select information on favorite author or books -->
+                                <div class="form-field">
+                                    <label for="listing">Choose a listing:</label>
+                                    <select id="listing" name="listing" class="drop-down-menu">
+                                        <option value="select">--Select--</option>
+                                        <option value="products">Products</option>
+                                        <option value="services">Services</option>
+                                        <option value="employees">Employees</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <button class="btn btn-primary full-width" id="btnDisplayListing" type="submit">Display Listing</button>
+                                </div>
+                            </div> 
+                        </div>
+                         <!--Below is the Return link to index.html landing page for my Web-231 Repository-->
+                    </div>
+                    <p>
+                        <a href="https://hannahd06.github.io/web-231/index.html" class="return-home">Return</a> 
+                    </p>
+                </div>
+
+                <!--Below is  html table that will display if the user selects products -->
+                <div id="form-javazon-select-result">
+                    <div id="products">
+                        <div class="card">
+                             <div class="card-title">Javazon Products</div>
+                            <div class="card-content">
+                                <table>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total Value</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtDesignWebsiteID"></td>
+                                        <td id="txtDesignWebsitedescript"></td>
+                                        <td id="txtDesignWebsiteprice"></td>
+                                        <td id="txtDesignWebsitequantity"></td>
+                                        <td id="txtDesignWebsitetotal"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtguideJavaScriptID"></td>
+                                        <td id="txtguideJavaScriptdescript"></td>
+                                        <td id="txtguideJavaScriptprice"></td>
+                                        <td id="txtguideJavaScriptquantity"></td>
+                                        <td id="txtguideJavaScripttotal"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtguideJSPatternID"></td>
+                                        <td id="txtguideJSPatterndescript"></td>
+                                        <td id="txtguideJSPatternprice"></td>
+                                        <td id="txtguideJSPatternquantity"></td>
+                                        <td id="txtguideJSPatterntotal"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtguideNodeID"></td>
+                                        <td id="txtguideNodedescript"></td>
+                                        <td id="txtguideNodeprice"></td>
+                                        <td id="txtguideNodequantity"></td>
+                                        <td id="txtguideNodetotal"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtguideMongoID"></td>
+                                        <td id="txtguideMongodescript"></td>
+                                        <td id="txtguideMongoprice"></td>
+                                        <td id="txtguideMongoquantity"></td>
+                                        <td id="txtguideMongototal"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Below is  html table that will display if the user selects services. -->
+                    <div id="services">
+                        <div class="card">
+                             <div class="card-title">Javazon Services</div>
+                            <div class="card-content">
+                                <table>
+                                    <tr>
+                                        <th>Service ID</th>
+                                        <th>Description</th>
+                                        <th>Hourly Rate</th>
+                                        <th>Minimum Billable Hours</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtwebDesignID"></td>
+                                        <td id="txtwebDesigndescript"></td> 
+                                        <td id="txtwebDesignrate"></td>
+                                        <td id="txtwebDesignhours"></td>                                   
+                                    </tr>
+                                    <tr>
+                                        <td id="txtconsultingDevOpsID"></td>
+                                        <td id="txtconsultingDevOpsdescript"></td> 
+                                        <td id="txtconsultingDevOpsrate"></td>
+                                        <td id="txtconsultingDevOpshours"></td>
+                                   </tr>
+                                    <tr>
+                                        <td id="txtdataDesignID"></td>
+                                        <td id="txtdataDesigndescript"></td> 
+                                        <td id="txtdataDesignrate"></td>
+                                        <td id="txtdataDesignhours"></td>
+                                   </tr>  
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Below is  html table that will display if the user selects employees. -->
+                    <div id="employees">
+                        <div class="card">
+                             <div class="card-title">Javazon Employees</div>
+                            <div class="card-content">
+                                <table>
+                                    <tr>
+                                        <th>Employee ID</th>
+                                        <th>Last Name</th>
+                                        <th>First Name</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="txtLudwigID"></td>
+                                        <td id="txtLudwiglastname"></td> 
+                                        <td id="txtLudwigfirstname"></td>
+                                        <td id="txtLudwigsalary"></td>                                   
+                                    </tr>
+                                    <tr>
+                                        <td id="txtJohannID"></td>
+                                        <td id="txtJohannlastname"></td> 
+                                        <td id="txtJohannfirstname"></td>
+                                        <td id="txtJohannsalary"></td> 
+                                   </tr>
+                                    <tr>
+                                        <td id="txtWolfgangID"></td>
+                                        <td id="txtWolfganglastname"></td> 
+                                        <td id="txtWolfgangfirstname"></td>
+                                        <td id="txtWolfgangsalary"></td> 
+                                   </tr>
+                                   <tr>
+                                        <td id="txtJohannesID"></td>
+                                        <td id="txtJohanneslastname"></td> 
+                                        <td id="txtJohannesfirstname"></td>
+                                        <td id="txtJohannessalary"></td>  
+                                   </tr> 
+                                   <tr>
+                                        <td id="txtJosephID"></td>
+                                        <td id="txtJosephlastname"></td> 
+                                        <td id="txtJosephfirstname"></td>
+                                        <td id="txtJosephsalary"></td>                                   
+                                   </tr>  
+                                   
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <script src="classes.js">
+            </script>
+        </body>
+</html>
