@@ -1,0 +1,52 @@
+/**
+    Title: delreal-javazon.css
+    Author: Hannah Del Real
+    Date: 2/22/2023
+    Description: CSS styling for delreal-alphabet-game.html
+*/
+/** This is the recommended css styling for html forms with results. */
+#container {
+    padding: 10px;
+}
+
+#form-alphabet-position-guess {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+#form-results-alphabet, #alphabet {
+    width: 600px;
+    margin: 3% auto 0;
+    margin-top: 40px;
+}
+
+/** This is the end of recommended css styling for html forms with results. */
+
+body {
+    margin: 0;
+    font-family: "Oswald", Verdana, Arial, sans-serif;
+}
+
+.app-header {
+    text-align: center;
+    font-weight: 400;
+}
+
+/** styling for html tables. */
+p {
+   text-align-last: left;
+}
+
+#entire-alphabet, #letter-results {
+    font-size: 28px;
+    text-align: center;
+}
+
+
+
+.btn-primary {
+    border: 1px solid black;
+    border-radius: 5px;  
+}
+
+

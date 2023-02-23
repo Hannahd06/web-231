@@ -1,0 +1,64 @@
+<!--
+    Title: delreal-alphabet-game.html
+    Author: Hannah Del Real
+    Date: 2/22/2023
+    Description: Using Javascript click events to locate and display positions of elements within an array.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>WEB 231 – Enterprise JavaScript I</title>
+        <link href="https://hannahd06.github.io/web-231/global.css" type="text/css" rel="stylesheet">
+        <link href="delreal-alphabet-game.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+        <body>
+            <div id="container">
+                <h1 class="app-header">
+                    Welcome to the Alphabet Game!
+                </h1>
+                <div id="form-alphabet-position-guess">
+                    <div class="card">
+                        <div class="card-title">Alphabet Number</div>
+                        <div class="card-content">
+                            <div class="form">
+                                <!--Below is the html code for the text input field and button for user to guess the position of the letter in the alphabet -->
+                                <div class="form-field">
+                                     <label for="txtPosition">Alphabet Letter Position</label>
+                                    <input type="text"  id="txtPosition" name="txtPosition" class="input">
+                                </div>
+                                <div class="form-field">
+                                    <button class="btn btn-primary full-width" id="btnFindLetter" type="submit">Find Letter</button>
+                                </div>
+                            </div> 
+                        </div>
+                         <!--Below is the Return link to index.html landing page for my Web-231 Repository-->
+                    </div>
+                    <p>
+                        <a href="https://hannahd06.github.io/web-231/index.html" class="return-home">Return</a> 
+                    </p>
+                </div>
+
+                <!--Below is  html table that will display if the user selects products -->
+                <div id="alphabet">
+                    <div class="card">
+                        <div class="card-title">Letters in the Alphabet</div>
+                        <div class="card-content" id="entire-alphabet">
+                        </div>
+                     </div>   
+                </div>
+
+                <div id="form-results-alphabet">        
+                    <div class="card">
+                        <div class="card-title">Results</div>
+                        <div class="card-content" id="letter-results">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <script src="alphabet-game.js">
+            </script>
+        </body>
+</html>
