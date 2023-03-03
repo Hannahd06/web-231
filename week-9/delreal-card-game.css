@@ -1,0 +1,59 @@
+/**
+    Title: delreal-card-game.css
+    Author: Hannah Del Real
+    Date: 3/1/2023
+    Description: CSS styling for delreal-card-game.html
+*/
+/** Recommended css styling for html forms with results. */
+#container {
+    padding: 10px;
+}
+
+#form-card-deal {
+    width: 600px;
+    margin: 3% auto 0;
+}
+
+#card-shuffled {
+    width: 600px;
+    margin: 3% auto 0;
+    margin-top: 40px;
+}
+
+/** End of recommended css styling for html forms with results. */
+
+body {
+    font-family: "Oswald", Verdana, Arial, sans-serif;
+}
+
+.app-header {
+    text-align: center;
+    font-weight: 400;
+}
+
+p {
+   text-align-last: left;
+}
+
+.btn-primary {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.player-card {
+    text-align: center;
+}
+
+/** display grid as four per row and create spacing between rows and columns */
+#player-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+
+
+

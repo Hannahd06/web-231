@@ -1,0 +1,51 @@
+<!--
+    Title: delreal-card-game.html
+    Author: Hannah Del Real
+    Date: 3/1/2023
+    Description: Using Javascript to create a deck of cards and shuffle deck.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>WEB 231 – Enterprise JavaScript I</title>
+        <link href="https://hannahd06.github.io/web-231/global.css" type="text/css" rel="stylesheet">
+        <link href="delreal-card-game.css" type="text/css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+        <body>
+            <div id="container">
+                <h1 class="app-header">
+                    Welcome to the Card Game!
+                </h1>
+                <div id="form-card-deal">
+                    <div class="card">
+                        <div class="card-title">Card Dealer</div>
+                        <div class="card-content">
+                             <!--Below is the button to trigger on-click event to shuffle deck of cards-->
+                                    <button class="btn btn-primary full-width" id="btnDealCards" type="submit">Deal Cards</button>
+                        </div>
+                         <!--Below is the Return link to index.html landing page for my Web-231 Repository-->
+                    </div>
+                    <p>
+                        <a href="https://hannahd06.github.io/web-231/index.html" class="return-home">Return</a> 
+                    </p>
+                </div>
+
+                <!--Below is the html card that will display the resulting lineup of cards after they have been shuffled in rows of four. -->
+                <div id="card-shuffled">
+                    <div class="card">
+                        <div class="card-title">Shuffled Cards</div>
+                        <div class="card-content" id="player-card-container">
+                        </div>
+                     </div>   
+                </div>
+            </div>
+           
+            <script src="card-game.js">
+            </script>
+        </body>
+</html>
+
